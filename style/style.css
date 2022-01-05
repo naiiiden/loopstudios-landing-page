@@ -183,4 +183,113 @@ main h1 {
     font-size: 5rem;
   }
 }
+
+.section_image_wrapper {
+  padding: 3rem 1.5rem;
+}
+
+.section_image_wrapper .desktop_img {
+  display: none;
+}
+
+.section_image_wrapper section {
+  border: 1px solid #fff;
+  padding: 1.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.section_image_wrapper section h2 {
+  font-family: Josefin Sans, sans-serif;
+}
+
+.section_image_wrapper section p {
+  font-family: Alata, sans-serif;
+  color: dimgray;
+}
+
+@media screen and (min-width: 1024px) {
+  .section_image_wrapper {
+    padding: 9rem 12rem;
+  }
+  .section_image_wrapper .absolute_wrapper {
+    position: relative;
+  }
+  .section_image_wrapper .mobile_img {
+    display: none;
+  }
+  .section_image_wrapper .desktop_img {
+    display: block;
+    width: 80%;
+  }
+  .section_image_wrapper section {
+    background: #fff;
+    padding: 3rem;
+    position: absolute;
+    width: 60%;
+    bottom: -6rem;
+    right: -9.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section_image_wrapper {
+    padding: 9rem 12rem;
+  }
+  .section_image_wrapper .absolute_wrapper {
+    position: relative;
+  }
+  .section_image_wrapper .mobile_img {
+    display: none;
+  }
+  .section_image_wrapper .desktop_img {
+    display: block;
+    width: 65%;
+  }
+  .section_image_wrapper section {
+    background: #fff;
+    padding: 5rem 3rem;
+    position: absolute;
+    width: 45%;
+    bottom: -6rem;
+    right: 2.5rem;
+  }
+  .section_image_wrapper section h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .section_image_wrapper {
+    padding: 9rem 12rem;
+  }
+  .section_image_wrapper .absolute_wrapper {
+    position: relative;
+  }
+  .section_image_wrapper .mobile_img {
+    display: none;
+  }
+  .section_image_wrapper .desktop_img {
+    display: block;
+    width: 55%;
+  }
+  .section_image_wrapper section {
+    background: #fff;
+    padding: 5rem 3rem;
+    position: absolute;
+    width: 45%;
+    bottom: -6rem;
+    right: 10.5rem;
+  }
+  .section_image_wrapper section h2 {
+    font-size: 2.5rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

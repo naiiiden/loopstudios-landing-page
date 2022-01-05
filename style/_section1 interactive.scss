@@ -1,0 +1,117 @@
+.section_image_wrapper {
+    padding: 3rem 1.5rem;
+
+    .desktop_img {
+        display: none;
+    }
+
+    section {
+        border: 1px solid #fff;
+        padding: 1.5rem 1rem;
+        display: flex;
+        gap: .5rem;
+        flex-direction: column;
+        text-align: center;
+
+        h2 {
+            font-family: Josefin Sans, sans-serif;
+        }
+
+        p {
+            font-family: Alata, sans-serif;
+            color: $very-dark-gray;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section_image_wrapper {
+        padding: 9rem 12rem;
+
+        .absolute_wrapper {
+            position: relative;
+        }
+
+        .mobile_img {
+            display: none;
+        }
+    
+        .desktop_img {
+            display: block;
+            width: 80%;
+        }
+
+        section {
+            background: #fff;
+            padding: 3rem;
+            position: absolute; 
+            width: 60%;
+            bottom: -6rem;
+            right: -9.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .section_image_wrapper {
+        padding: 9rem 12rem;
+
+        .absolute_wrapper {
+            position: relative;
+        }
+
+        .mobile_img {
+            display: none;
+        }
+    
+        .desktop_img {
+            display: block;
+            width: 65%;
+        }
+
+        section {
+            background: #fff;
+            padding: 5rem 3rem;
+            position: absolute; 
+            width: 45%;
+            bottom: -6rem;
+            right: 2.5rem;
+
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .section_image_wrapper {
+        padding: 9rem 12rem;
+
+        .absolute_wrapper {
+            position: relative;
+        }
+
+        .mobile_img {
+            display: none;
+        }
+    
+        .desktop_img {
+            display: block;
+            width: 55%;
+        }
+
+        section {
+            background: #fff;
+            padding: 5rem 3rem;
+            position: absolute; 
+            width: 45%;
+            bottom: -6rem;
+            right: 10.5rem;
+
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
