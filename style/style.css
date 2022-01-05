@@ -10,10 +10,131 @@ body {
   width: 100%;
   min-height: 100vh;
   font-size: 15px;
+  position: relative;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 1023px) {
+  .header_main_background {
+    height: 100vh;
+    background: url("../images/mobile/image-hero.jpg");
+    background-size: 100% 100%;
+  }
+  header {
+    padding: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+  }
+  header .logo {
+    z-index: 98;
+  }
+  header .hamburger {
+    border: none;
+    background: none;
+    z-index: 99;
+    position: fixed;
+    right: 0;
+    padding: 1.5rem;
+  }
+  header nav .nav-ul {
+    list-style-type: none;
+    z-index: 97;
+    position: fixed;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    -webkit-backdrop-filter: blur(0.5rem);
+            backdrop-filter: blur(0.5rem);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 999%;
+    right: 0;
+    top: 0;
+  }
+  header nav .nav-ul .links_animation {
+    padding: 1.5rem;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.5rem;
+    left: 999%;
+  }
+  header nav .nav-ul a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Josefin Sans, sans-serif;
+    font-size: 1.25rem;
+  }
+  header nav .nav-ul.show {
+    left: 0;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  header nav .nav-ul.show .links_animation {
+    left: 0;
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header_main_background {
+    height: 100vh;
+    background: url("../images/desktop/image-hero.jpg");
+    background-size: 100% 100%;
+  }
+  header {
+    padding: 3rem 12rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .hamburger {
+    display: none;
+  }
+  header .nav-ul {
+    list-style-type: none;
+  }
+  header .nav-ul .links_animation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+  }
+  header .nav-ul a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Alata, sans-serif;
+  }
+  header .nav-ul a:hover {
+    text-decoration: underline;
+  }
 }
 /*# sourceMappingURL=style.css.map */
