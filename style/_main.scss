@@ -1,11 +1,9 @@
 main {
+    height: 100%;
     padding: 1.5rem;
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    
+
     h1 {
         font-size: 2rem;
         line-height: 1.25;
@@ -21,10 +19,21 @@ main {
 @media screen and (min-width: 1024px) {
     main {
         padding: 0 12rem;
-
+        
         h1 {
             font-size: 4rem;
             max-width: 45rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        h1 {
+            font-size: 5rem;
         }
     }
 }
