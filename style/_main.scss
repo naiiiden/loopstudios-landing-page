@@ -1,12 +1,11 @@
 main {
     padding: 1.5rem;
-    height: 100%;
     display: flex;
     align-items: center;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-
+    
     h1 {
         font-size: 2rem;
         line-height: 1.25;
