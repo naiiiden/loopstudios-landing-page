@@ -23,10 +23,6 @@ footer {
                     color: #fff;
                     text-decoration: none;
                     font-family: Alata, sans-serif;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
                 }
             }
         }
@@ -67,6 +63,27 @@ footer {
                     flex-direction: row;
                     gap: 1rem;
                 }
+            }
+        }
+
+        .hover_animation {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 2.25rem;
+
+            &:hover {
+                .white_border {
+                    width: 60%;
+                    transition: 0.3s ease;
+                }
+            }
+
+            .white_border {
+                width: 0;
+                height: .15rem;
+                background: #fff;
             }
         }
         
