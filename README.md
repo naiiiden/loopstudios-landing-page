@@ -11,7 +11,7 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 ![desktop](/design/desktop.png)
 ### Active states
 This picture is provided by Frontendmentor, so the design in the image and my design might be different, but the active states are the same.
-![active](/design/active-states.png)
+![active](/design/active-states.jpg)
 
 ## Live preview
 https://naiiiden.github.io/loopstudios-landing-page/
