@@ -25,16 +25,16 @@ img {
     position: relative;
     z-index: 0;
   }
-  header {
+  .header {
     padding: 1.5rem;
     display: flex;
     align-items: center;
     position: fixed;
   }
-  header .logo {
+  .header .logo {
     z-index: 98;
   }
-  header .hamburger {
+  .header .hamburger {
     border: none;
     background: none;
     z-index: 99;
@@ -42,7 +42,7 @@ img {
     right: 0;
     padding: 1.5rem;
   }
-  header nav .nav-ul {
+  .header nav .nav-ul {
     list-style-type: none;
     z-index: 97;
     position: fixed;
@@ -59,21 +59,21 @@ img {
     padding: 1.5rem;
     gap: 1.5rem;
   }
-  header nav .nav-ul a {
+  .header nav .nav-ul a {
     text-decoration: none;
     color: #fff;
     font-family: Josefin Sans, sans-serif;
     font-size: 1.25rem;
     text-transform: uppercase;
   }
-  header nav .nav-ul li {
+  .header nav .nav-ul li {
     transform: translateX(100rem);
   }
-  header nav .nav-ul.show {
+  .header nav .nav-ul.show {
     left: 0;
     transition: 0.3s ease;
   }
-  header nav .nav-ul.show li {
+  .header nav .nav-ul.show li {
     transform: translateX(0);
     transition: 0.6s ease;
   }
@@ -86,37 +86,37 @@ img {
     position: relative;
     z-index: 0;
   }
-  header {
+  .header {
     padding: 3rem 12rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  header .hamburger {
+  .header .hamburger {
     display: none;
   }
-  header .nav-ul {
+  .header .nav-ul {
     list-style-type: none;
     display: flex;
     gap: 1.25rem;
   }
-  header .nav-ul .hover_animation {
+  .header .nav-ul .hover_animation {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     height: 2.25rem;
   }
-  header .nav-ul .hover_animation:hover .white_border {
+  .header .nav-ul .hover_animation:hover .white_border {
     width: 60%;
     transition: 0.3s ease;
   }
-  header .nav-ul .hover_animation .white_border {
+  .header .nav-ul .hover_animation .white_border {
     width: 0;
     height: 0.1rem;
     background: #fff;
   }
-  header .nav-ul a {
+  .header .nav-ul a {
     color: #fff;
     text-decoration: none;
     font-family: Alata, sans-serif;
