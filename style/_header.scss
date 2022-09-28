@@ -42,7 +42,6 @@
                 top: 0;
                 padding: 1.5rem;
                 gap: 1.5rem;
-                // left: 999%;
                 
                 a {
                     text-decoration: none;
@@ -95,32 +94,28 @@
             display: flex;
             gap: 1.25rem;
 
-            .hover_animation {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-                height: 2.25rem;
-
-                &:hover {
-                    .white_border {
-                        width: 60%;
-                        transition: 0.3s ease;
-                    }
-                }
-
-                .white_border {
-                    width: 0;
-                    height: .1rem;
-                    background: #fff;
-                }
-            }
-
             a {
                 color: #fff;
                 text-decoration: none;
                 font-family: Alata, sans-serif;
                 font-size: 1.1rem;
+                position: relative;
+                
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    background: #fff;
+                    height: .2rem;
+                    top: 2rem;
+                    left: 0;
+                    transition: .2s;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    transition: .2s;
+                }
             }
         }
     }
