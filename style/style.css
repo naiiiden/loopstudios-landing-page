@@ -56,14 +56,8 @@ img {
     left: 999%;
     right: 0;
     top: 0;
-  }
-  header nav .nav-ul .links_animation {
     padding: 1.5rem;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
     gap: 1.5rem;
-    left: 999%;
   }
   header nav .nav-ul a {
     text-decoration: none;
@@ -72,12 +66,15 @@ img {
     font-size: 1.25rem;
     text-transform: uppercase;
   }
+  header nav .nav-ul li {
+    transform: translateX(100rem);
+  }
   header nav .nav-ul.show {
     left: 0;
     transition: 0.3s ease;
   }
-  header nav .nav-ul.show .links_animation {
-    left: 0;
+  header nav .nav-ul.show li {
+    transform: translateX(0);
     transition: 0.6s ease;
   }
 }
