@@ -1,4 +1,4 @@
-main {
+.h1title {
     height: 100%;
     padding: 1.5rem;
     display: flex;
@@ -17,7 +17,7 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
-    main {
+    .h1title {
         padding: 0 12rem;
         
         h1 {
@@ -31,7 +31,7 @@ main {
 }
 
 @media screen and (min-width: 1440px) {
-    main {
+    .h1title {
         h1 {
             font-size: 5rem;
         }
