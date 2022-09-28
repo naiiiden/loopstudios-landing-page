@@ -97,8 +97,6 @@ img {
   }
   header .nav-ul {
     list-style-type: none;
-  }
-  header .nav-ul .links_animation {
     display: flex;
     gap: 1.25rem;
   }
